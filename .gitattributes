@@ -1,0 +1,4 @@
+client/*.css linguist-vendored
+client/*.html linguist-vendored
+Templates/* linguist-vendored
+*.html linguist-language=JavaScript
