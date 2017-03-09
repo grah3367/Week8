@@ -1,4 +1,8 @@
 <template name="main">
     <!-- main stuff goes here !-->
-    <div class="container">{{message}}</div>
+    <div class="container">
+        {{#each message in messages}}
+            <div class="">[{{message.when}}] &#8249;{{ message.user }}&#8250; {{message.message}}</div>
+        {{/each}}
+    </div>
 </template>

@@ -5,8 +5,16 @@
         <div class="container">
             <h1>Welcome to CSC 182!</h1>
             <p>This is a our in-class lab for week 8. We are learning Meteor!</p>
+            <p>Login to chat.</p>
             <p><button id="demo" class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</button></p>
+            {{#if currentUser }}
+            <form class="form-inline">
+                <div class="form-group">
+                    <input type="text" class="form-control" name="addMessage" size="100" placeholder="Enter a message">
+                </div>
+                <button type="submit" class="btn btn-default">Join the Conversation!</button>
+            </form>
+            {{/if}}
         </div>
     </div>
-</template>
 </template>
